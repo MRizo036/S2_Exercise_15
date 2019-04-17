@@ -75,7 +75,7 @@ function calcOrder() {
       orderForm.elements.totalCost.value = formatUSACurrency(totalCost);
 
       //Store the order details 
-      orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex.text];
+      orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex].text;
       orderForm.elements.protectionName.value = document.querySelector('input[name = "protection"]:checked').nextSibling.nodeValue;
 }
 
